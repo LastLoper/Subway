@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		513B0D2D2930803000F70956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D2C2930803000F70956 /* AppDelegate.swift */; };
 		513B0D2F2930803000F70956 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D2E2930803000F70956 /* SceneDelegate.swift */; };
-		513B0D312930803000F70956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D302930803000F70956 /* ViewController.swift */; };
-		513B0D342930803000F70956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513B0D322930803000F70956 /* Main.storyboard */; };
+		513B0D312930803000F70956 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D302930803000F70956 /* MainVC.swift */; };
 		513B0D362930803200F70956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513B0D352930803200F70956 /* Assets.xcassets */; };
 		513B0D392930803200F70956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513B0D372930803200F70956 /* LaunchScreen.storyboard */; };
+		513B0D4129308BF500F70956 /* SubwayRealTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D4029308BF500F70956 /* SubwayRealTimeVC.swift */; };
+		513B0D4329308C2200F70956 /* SubwayRealTimeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D4229308C2200F70956 /* SubwayRealTimeListCell.swift */; };
+		513B0D4529309F8900F70956 /* StationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D4429309F8900F70956 /* StationResponse.swift */; };
+		513B0D472930A84600F70956 /* StationArrivalDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D462930A84600F70956 /* StationArrivalDataResponse.swift */; };
+		8B73D10AB0C7F28D050349C6 /* Pods_Subway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E514F1A628E9994D9317C5C /* Pods_Subway.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E514F1A628E9994D9317C5C /* Pods_Subway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3291A2F70B4A6F0C05E75677 /* Pods-Subway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subway.debug.xcconfig"; path = "Target Support Files/Pods-Subway/Pods-Subway.debug.xcconfig"; sourceTree = "<group>"; };
 		513B0D292930803000F70956 /* Subway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		513B0D2C2930803000F70956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		513B0D2E2930803000F70956 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		513B0D302930803000F70956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		513B0D332930803000F70956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		513B0D302930803000F70956 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		513B0D352930803200F70956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		513B0D382930803200F70956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		513B0D3A2930803200F70956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		513B0D4029308BF500F70956 /* SubwayRealTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealTimeVC.swift; sourceTree = "<group>"; };
+		513B0D4229308C2200F70956 /* SubwayRealTimeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealTimeListCell.swift; sourceTree = "<group>"; };
+		513B0D4429309F8900F70956 /* StationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationResponse.swift; sourceTree = "<group>"; };
+		513B0D462930A84600F70956 /* StationArrivalDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationArrivalDataResponse.swift; sourceTree = "<group>"; };
+		B28AF413E044C2B228759B73 /* Pods-Subway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subway.release.xcconfig"; path = "Target Support Files/Pods-Subway/Pods-Subway.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B73D10AB0C7F28D050349C6 /* Pods_Subway.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26892A6C28C521BE7CAF66A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3291A2F70B4A6F0C05E75677 /* Pods-Subway.debug.xcconfig */,
+				B28AF413E044C2B228759B73 /* Pods-Subway.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		513B0D202930803000F70956 = {
 			isa = PBXGroup;
 			children = (
 				513B0D2B2930803000F70956 /* Subway */,
 				513B0D2A2930803000F70956 /* Products */,
+				26892A6C28C521BE7CAF66A7 /* Pods */,
+				633F3749C36CC8E8C5A12046 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +80,48 @@
 			children = (
 				513B0D2C2930803000F70956 /* AppDelegate.swift */,
 				513B0D2E2930803000F70956 /* SceneDelegate.swift */,
-				513B0D302930803000F70956 /* ViewController.swift */,
-				513B0D322930803000F70956 /* Main.storyboard */,
+				513B0D482930A87700F70956 /* Model */,
+				513B0D492930A87E00F70956 /* View */,
+				513B0D4A2930A88C00F70956 /* Controller */,
 				513B0D352930803200F70956 /* Assets.xcassets */,
 				513B0D372930803200F70956 /* LaunchScreen.storyboard */,
 				513B0D3A2930803200F70956 /* Info.plist */,
 			);
 			path = Subway;
+			sourceTree = "<group>";
+		};
+		513B0D482930A87700F70956 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				513B0D4429309F8900F70956 /* StationResponse.swift */,
+				513B0D462930A84600F70956 /* StationArrivalDataResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		513B0D492930A87E00F70956 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				513B0D4229308C2200F70956 /* SubwayRealTimeListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		513B0D4A2930A88C00F70956 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				513B0D302930803000F70956 /* MainVC.swift */,
+				513B0D4029308BF500F70956 /* SubwayRealTimeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		633F3749C36CC8E8C5A12046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E514F1A628E9994D9317C5C /* Pods_Subway.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 513B0D3D2930803200F70956 /* Build configuration list for PBXNativeTarget "Subway" */;
 			buildPhases = (
+				D27288F641F2250CC4BBB55D /* [CP] Check Pods Manifest.lock */,
 				513B0D252930803000F70956 /* Sources */,
 				513B0D262930803000F70956 /* Frameworks */,
 				513B0D272930803000F70956 /* Resources */,
+				E0363DCFB65EE394FD990622 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +186,63 @@
 			files = (
 				513B0D392930803200F70956 /* LaunchScreen.storyboard in Resources */,
 				513B0D362930803200F70956 /* Assets.xcassets in Resources */,
-				513B0D342930803000F70956 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D27288F641F2250CC4BBB55D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Subway-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0363DCFB65EE394FD990622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Subway/Pods-Subway-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Subway/Pods-Subway-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Subway/Pods-Subway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		513B0D252930803000F70956 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513B0D312930803000F70956 /* ViewController.swift in Sources */,
+				513B0D4129308BF500F70956 /* SubwayRealTimeVC.swift in Sources */,
+				513B0D312930803000F70956 /* MainVC.swift in Sources */,
+				513B0D4529309F8900F70956 /* StationResponse.swift in Sources */,
+				513B0D472930A84600F70956 /* StationArrivalDataResponse.swift in Sources */,
+				513B0D4329308C2200F70956 /* SubwayRealTimeListCell.swift in Sources */,
 				513B0D2D2930803000F70956 /* AppDelegate.swift in Sources */,
 				513B0D2F2930803000F70956 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +251,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		513B0D322930803000F70956 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				513B0D332930803000F70956 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		513B0D372930803200F70956 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +378,7 @@
 		};
 		513B0D3E2930803200F70956 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3291A2F70B4A6F0C05E75677 /* Pods-Subway.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +389,8 @@
 				INFOPLIST_FILE = Subway/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +398,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = walter.myios.app.Subway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		513B0D3F2930803200F70956 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28AF413E044C2B228759B73 /* Pods-Subway.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +420,8 @@
 				INFOPLIST_FILE = Subway/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +429,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = walter.myios.app.Subway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
