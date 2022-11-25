@@ -75,7 +75,7 @@ class SubwayRealTimeVC: UIViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
-        navigationItem.title = "지역명"
+        navigationItem.title = station.stationName
         
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { view in
