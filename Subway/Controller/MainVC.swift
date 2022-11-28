@@ -39,6 +39,8 @@ class MainVC: UIViewController {
         
         setUpNavigationItems()
         setUpTableViewLayout()
+        
+        getHolidayData()
     }
     
     private func setUpNavigationItems() {
@@ -63,12 +65,12 @@ class MainVC: UIViewController {
          addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
          */
         AF.request(urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")
-            .responseDecodable(of: StationResponse.self) { reponse in
+            .responseDecodable(of: StationResponse.self) { response in
 //                guard case .success(let data) = response.result else { return }
-                switch reponse.result {
+                switch response.result {
                 case .success(let data):
-                    print(data.stations)
-                    
+                    print(data)
+
                     self.stations = data.stations
                     self.tableView.isHidden = false
                     self.tableView.reloadData()
@@ -77,6 +79,27 @@ class MainVC: UIViewController {
                 }
             }
             .resume()
+    }
+    
+    //URLSession을 이용한 공휴일 데이터 가져오기
+    private func getHolidayData() {
+        let urlHoliday = "https://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo?solYear=2022&solMonth=03&ServiceKey=IIL7UWdyZVoWG7cxSTS8dR7GOOF39dZfa5Yb2ycPnkfuzythdYSJAHrD3ymecrT0Ll0p1B9F%2Bc3diiWELt3nUw%3D%3D&_type=json"
+        if let url = URL(string: urlHoliday) {
+            let request = URLRequest.init(url: url)
+            
+            URLSession.shared.dataTask(with: request) {
+                (data, response, error) in guard let data = data else {return}
+                let decoder = JSONDecoder()
+                print(response as Any)
+                do{
+                    let json = try decoder.decode(HolidayResponse.self , from: data)
+                    print(json)
+                }
+                catch{
+//                    print(error)
+                }
+            }.resume()
+        }
     }
 }
 

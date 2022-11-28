@@ -17,6 +17,7 @@
 		513B0D4529309F8900F70956 /* StationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D4429309F8900F70956 /* StationResponse.swift */; };
 		513B0D472930A84600F70956 /* StationArrivalDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B0D462930A84600F70956 /* StationArrivalDataResponse.swift */; };
 		8B73D10AB0C7F28D050349C6 /* Pods_Subway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E514F1A628E9994D9317C5C /* Pods_Subway.framework */; };
+		9306003C29348A0400B847E8 /* HolidayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9306003B29348A0400B847E8 /* HolidayResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		513B0D4229308C2200F70956 /* SubwayRealTimeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealTimeListCell.swift; sourceTree = "<group>"; };
 		513B0D4429309F8900F70956 /* StationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationResponse.swift; sourceTree = "<group>"; };
 		513B0D462930A84600F70956 /* StationArrivalDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationArrivalDataResponse.swift; sourceTree = "<group>"; };
+		9306003B29348A0400B847E8 /* HolidayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayResponse.swift; sourceTree = "<group>"; };
 		B28AF413E044C2B228759B73 /* Pods-Subway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subway.release.xcconfig"; path = "Target Support Files/Pods-Subway/Pods-Subway.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			children = (
 				513B0D4429309F8900F70956 /* StationResponse.swift */,
 				513B0D462930A84600F70956 /* StationArrivalDataResponse.swift */,
+				9306003B29348A0400B847E8 /* HolidayResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				513B0D4129308BF500F70956 /* SubwayRealTimeVC.swift in Sources */,
 				513B0D312930803000F70956 /* MainVC.swift in Sources */,
+				9306003C29348A0400B847E8 /* HolidayResponse.swift in Sources */,
 				513B0D4529309F8900F70956 /* StationResponse.swift in Sources */,
 				513B0D472930A84600F70956 /* StationArrivalDataResponse.swift in Sources */,
 				513B0D4329308C2200F70956 /* SubwayRealTimeListCell.swift in Sources */,
@@ -312,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -366,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

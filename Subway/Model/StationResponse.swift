@@ -12,14 +12,14 @@ struct StationResponse: Decodable {
         searchInfo.row
     }
         
-    struct SearchInfoBySubwayNameService: Decodable {
-        var row: [Station] = []
-    }
-    
     private let searchInfo: SearchInfoBySubwayNameService
     enum CodingKeys: String, CodingKey {
         case searchInfo = "SearchInfoBySubwayNameService"
     }
+}
+
+struct SearchInfoBySubwayNameService: Decodable {
+    var row: [Station] = []
 }
 
 struct Station: Decodable {
